@@ -15,11 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "preinstall": "npx npm-force-resolutions",
     "eject": "react-scripts eject"
-  },
-  "resolutions": {
-    "postcss": "^8.2.10"
   },
   "eslintConfig": {
     "extends": [
