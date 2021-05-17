@@ -13,7 +13,7 @@ const Navbar = () => {
 				{user ? (
 					<Link to='/create'>New Blog </Link>
 				) : (
-					<Link to='/create'>Log In </Link>
+					<Link to='/login'>Log In </Link>
 				)}
 			</div>
 		</nav>
