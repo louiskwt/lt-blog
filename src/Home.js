@@ -9,7 +9,7 @@ function Home() {
 		<div className='home'>
 			{error && <div>{error}</div>}
 			{isLoading && <div>Loading...</div>}
-			{data && <BlogList blogs={data} title='All Blogs'></BlogList>}
+			{data && <BlogList blogs={data} title='All Posts'></BlogList>}
 		</div>
 	);
 }
