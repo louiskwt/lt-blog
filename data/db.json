@@ -13,28 +13,10 @@
       "id": 2
     },
     {
-      "title": "Learn React",
-      "body": "Learning React is important!",
-      "author": "mario",
-      "id": 3
-    },
-    {
       "title": "JS fundamentals",
       "body": "JS fundamentals include: Loops, Array, String, Object...",
       "author": "mario",
       "id": 4
-    },
-    {
-      "title": "New Blog",
-      "body": "new blog ",
-      "author": "mario",
-      "id": 5
-    },
-    {
-      "title": "Learn HTML",
-      "body": "HTML is easy to learn",
-      "author": "yoshi",
-      "id": 6
     },
     {
       "title": "RE: Learning React",
