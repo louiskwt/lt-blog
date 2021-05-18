@@ -12,6 +12,7 @@ import {
 import NotFound from './comps/NotFound';
 import UserContext from './context/userContext';
 import Login from './comps/Login';
+import Signup from './comps/Signup';
 
 function App() {
 	const [user, setUser] = useState(null);
@@ -27,6 +28,9 @@ function App() {
 							</Route>
 							<Route path='/login'>
 								<Login />
+							</Route>
+							<Route path='/signup'>
+								<Signup />
 							</Route>
 							<Route path='/create'>
 								{user !== null ? (
