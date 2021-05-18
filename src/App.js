@@ -3,7 +3,12 @@ import Navbar from './comps/Navbar';
 import Home from './comps/Home';
 import Create from './comps/Create';
 import BlogDetails from './comps/BlogDetails';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+	BrowserRouter as Router,
+	Redirect,
+	Route,
+	Switch
+} from 'react-router-dom';
 import NotFound from './comps/NotFound';
 import UserContext from './context/userContext';
 import Login from './comps/Login';
@@ -24,7 +29,11 @@ function App() {
 								<Login />
 							</Route>
 							<Route path='/create'>
-								<Create />
+								{user !== null ? (
+									<Create />
+								) : (
+									<Redirect to='/login' />
+								)}
 							</Route>
 							<Route path='/blogs/:id'>
 								<BlogDetails />
