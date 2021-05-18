@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 
 const Login = () => {
-	const [user, setUser] = useState(null);
+	const [email, setEmail] = useState(null);
 	const [password, setPassword] = useState(null);
 
 	return (
-		<div className='create'>
+		<div className='form'>
 			<h2>Login</h2>
 			<form>
-				<label>Blog Title:</label>
+				<label>Email:</label>
 				<input
-					type='text'
-					value={user}
-					onChange={(e) => setUser(e.target.value)}
+					type='email'
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
 					required
 				/>
-				<label>Blog Content:</label>
+				<label>Password:</label>
 				<input
 					type='password'
 					value={password}
