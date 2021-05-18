@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import UserContext from '../context/userContext';
 
 const Create = () => {
 	const [title, setTitle] = useState('');
 	const [body, setBody] = useState('');
 	const [author, setAuthor] = useState('mario');
 	const [isLoading, setIsLoading] = useState(false);
+	const { user } = useContext(UserContext);
 
 	const history = useHistory();
 
@@ -45,8 +47,8 @@ const Create = () => {
 					value={author}
 					onChange={(e) => setAuthor(e.target.value)}
 				>
-					<option value='mario'>Mario</option>
-					<option value='yoshi'>Yosi</option>
+					<option value='mario'>{user.name}</option>
+					<option value='yoshi'>Anonymous Guest</option>
 				</select>
 				{!isLoading && <button>Add Blog</button>}
 				{isLoading && <button disabled>Adding blog...</button>}

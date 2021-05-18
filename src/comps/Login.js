@@ -17,9 +17,22 @@ const Login = () => {
 			.then((userCredential) => {
 				// Signed In
 				const user = userCredential.user.email;
+				// Clear input
 				setEmail('');
 				setPassword('');
-				setUser(user);
+				// Generate a user name based on that login email
+				let username = '';
+				for (let i in user) {
+					if (user[i] === '@') {
+						username = user.slice(0, i);
+					}
+				}
+				// Set user
+				setUser({
+					id: user,
+					name: username
+				});
+				// redirect to home page
 				history.push('/');
 			})
 			.catch((error) => {
