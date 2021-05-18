@@ -68,6 +68,7 @@ body {
 
 .blog-details div {
 	margin: 20px 0;
+	white-space: pre-wrap;
 }
 
 .blog-details button {
@@ -104,6 +105,11 @@ body {
 	box-sizing: border-box;
 	display: block;
 }
+
+.create textarea {
+	white-space: pre-wrap;
+}
+
 .create button {
 	background: #51c4d3;
 	color: #fff;
