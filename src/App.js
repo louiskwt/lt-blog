@@ -16,7 +16,7 @@ import Login from './comps/Login';
 function App() {
 	const [user, setUser] = useState(null);
 	return (
-		<UserContext.Provider value={(user, setUser)}>
+		<UserContext.Provider value={{ user, setUser }}>
 			<Router>
 				<div className='App'>
 					<Navbar />
